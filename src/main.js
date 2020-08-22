@@ -1,4 +1,4 @@
-const port = 9999;
+const port = process.env.PORT || 9999;
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -30,6 +30,11 @@ process.on('uncaughtException', (reason) => {
     }
 
     console.log(`Node encountered with following error: ${finalReason}`, 'Node2General');
+});
+
+// Health check
+app.all('/', (req, res) => {
+    res.send(new Date().toString()).status(200);
 });
 
 // Handle Sample Project POST Requests

@@ -1,0 +1,33 @@
+{
+  "name": "nodejs_api",
+  "version": "1.0.0",
+  "description": "A sample Nodejs restful API with MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emregedikoglu/nodejs-restful-api.git"
+  },
+  "author": "emregedikoglu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emregedikoglu/nodejs-restful-api/issues"
+  },
+  "homepage": "https://github.com/emregedikoglu/nodejs-restful-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "heroku": "^7.42.8",
+    "jest": "^26.4.0",
+    "mongodb": "^3.6.0",
+    "mongoose": "5.9.29",
+    "puppeteer": "^5.2.1"
+  },
+  "engines": {
+    "node": "13.8.0"
+  }
+}

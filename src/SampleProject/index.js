@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-let exampleSchema = require('./model');
+let exampleSchema = require('./model/model');
 
 let uri = 'mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true';
 
